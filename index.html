@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        .font-luxury { font-family: 'Playfair Display', serif; }
+        .font-modern { font-family: 'Inter', sans-serif; }
+        .scrolling-text { animation: scroll-left 30s linear infinite; }
+        @keyframes scroll-left { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        .hero-overlay { background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%); }
+        .glass-effect { backdrop-filter: blur(20px); background: rgba(255,255,255,0.1); }
+        .luxury-gradient { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #ffd700 50%, #b8860b 100%); }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+        .fade-in { opacity: 0; animation: fadeIn 0.6s ease forwards; }
+        @keyframes fadeIn { to { opacity: 1; } }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'luxury-navy': '#1a1a2e',
+                        'luxury-gold': '#d4af37',
+                        'luxury-cream': '#faf8f3'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-modern">
+    <!-- Header Top Moving Banner -->
+    <div id="header-banner" class="bg-luxury-navy text-white py-2 overflow-hidden relative">
+        <div class="scrolling-text whitespace-nowrap">
+            <span class="inline-block px-8 text-sm font-medium">
+                Deal of the Week: Last chance to save up to 30% PLUS a FREE two-category suite upgrade* | Seven Seas Voyager | 28 June 2026 | 12 nights | Istanbul to Civitavecchia | Deluxe Veranda WAS £9,944pp NOW £5,876pp |
+            </span>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header id="header" class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img class="h-12 w-auto" src="https://www.sixstarcruises.co.uk/img/logo/ssc-logo.png" />
+                </div>
+
+                <!-- Navigation Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-luxury-gold font-medium transition-colors">
+                            <!-- <img class="w-6 h-6 rounded object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a558f72413-6b20322e1e6ee838075c.png" alt="luxury home icon elegant design" /> -->
+                            <span>Home</span>
+                        </a>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-luxury-gold font-medium transition-colors">
+                            <!-- <img class="w-6 h-6 rounded object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f4b3f68bae-9aad3eeae08c8db2e1b3.png" alt="luxury deals discount icon elegant" /> -->
+                            <span>Deals</span>
+                        </a>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-luxury-gold font-medium transition-colors">
+                            <!-- <img class="w-6 h-6 rounded object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b35a4bea83-cd1f9830aa19183eca03.png" alt="luxury itinerary map icon elegant" /> -->
+                            <span>Itinerary</span>
+                        </a>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-luxury-gold font-medium transition-colors">
+                            <!-- <img class="w-6 h-6 rounded object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/75f356e188-d365301bd01a7fe83768.png" alt="luxury cruise line ship icon elegant" /> -->
+                            <span>Cruise Line</span>
+                        </a>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-luxury-gold font-medium transition-colors">
+                            <!-- <img class="w-6 h-6 rounded object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/70fb25db06-ab960daa1c6905211187.png" alt="luxury ship vessel icon elegant" /> -->
+                            <span>Ship</span>
+                        </a>
+                    </div>
+                    <div class="relative group">
+                        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-luxury-gold font-medium transition-colors">
+                            <!-- <img class="w-6 h-6 rounded object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6767686295-04e59e9b80aaab2ecf88.png" alt="luxury destination travel icon elegant" /> -->
+                            <span>Destination</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Search & CTA -->
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2">
+                        <i class="fas fa-search text-gray-500 mr-2"></i>
+                        <input type="text" placeholder="Search cruises..." class="bg-transparent outline-none text-sm w-32">
+                    </div>
+                    <button class="bg-luxury-gold hover:bg-yellow-600 text-white px-6 py-2 rounded-full font-semibold transition-colors">
+                        Book Now
+                    </button>
+                    <button class="lg:hidden text-gray-800">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="relative h-[800px] overflow-hidden">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/75255a1295-a42b215e733b613cd662.png" alt="luxury cruise ship sailing sunset ocean waves elegant scenic view" />
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-6 h-full flex flex-col justify-center">
+            <div class="text-center text-white max-w-4xl mx-auto">
+                <h1 class="font-luxury text-6xl lg:text-7xl font-bold mb-6 fade-in">
+                    Discover Luxury Beyond Imagination
+                </h1>
+                <p class="text-xl lg:text-2xl mb-12 font-light leading-relaxed fade-in" style="animation-delay: 0.3s;">
+                    Embark on extraordinary journeys aboard the world's most luxurious cruise ships
+                </p>
+            </div>
+
+            <!-- Search Form -->
+            <div class="glass-effect rounded-2xl p-8 max-w-6xl mx-auto mt-12 fade-in" style="animation-delay: 0.6s;">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                    <div class="space-y-2">
+                        <label class="text-white text-sm font-medium">Duration</label>
+                        <select class="w-full bg-white/20 border border-white/30 rounded-lg px-4 py-3 text-white">
+                            <option>7-14 nights</option>
+                            <option>15+ nights</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-white text-sm font-medium">Destination</label>
+                        <select class="w-full bg-white/20 border border-white/30 rounded-lg px-4 py-3 text-white">
+                            <option>Caribbean</option>
+                            <option>Mediterranean</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-white text-sm font-medium">Cruise Line</label>
+                        <select class="w-full bg-white/20 border border-white/30 rounded-lg px-4 py-3 text-white">
+                            <option>Regent Seven Seas</option>
+                            <option>Silversea</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-white text-sm font-medium">Guests</label>
+                        <select class="w-full bg-white/20 border border-white/30 rounded-lg px-4 py-3 text-white">
+                            <option>2 Guests</option>
+                            <option>4 Guests</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button class="w-full bg-luxury-gold hover:bg-yellow-600 text-white py-3 rounded-lg font-semibold transition-colors">
+                            <i class="fas fa-search mr-2"></i>
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-section" class="py-20 bg-luxury-cream">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl hover-scale">
+                        <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d060e8a9f1-093be44c1bac0726b46f.png" alt="luxury cruise ship interior elegant suite balcony ocean view" />
+                        <div class="absolute inset-0 bg-black/30 flex items-center justify-center">
+                            <button class="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:bg-white/30 transition-colors">
+                                <i class="fas fa-play text-white text-2xl"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-4">
+                        <img class="w-full h-24 object-cover rounded-lg hover-scale" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e3eb8e5ef8-05bdc2453769be4063fb.png" alt="luxury cruise dining fine restaurant elegant" />
+                        <img class="w-full h-24 object-cover rounded-lg hover-scale" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fb12ce9da1-7708631464642fd221f1.png" alt="luxury cruise spa wellness elegant interior" />
+                        <img class="w-full h-24 object-cover rounded-lg hover-scale" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2b3d8dce64-cd1cd1dddcde0918f6d0.png" alt="luxury cruise entertainment theater elegant" />
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h2 class="font-luxury text-5xl font-bold text-luxury-navy">
+                        Redefining Luxury at Sea
+                    </h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        For over two decades, SixStarCruises has curated the world's most exclusive maritime experiences. 
+                        Our commitment to unparalleled luxury, personalized service, and extraordinary destinations 
+                        has made us the preferred choice for discerning travelers.
+                    </p>
+                    
+                    <!-- Scrolling Benefits Bar -->
+                    <div class="bg-white rounded-lg p-4 shadow-lg overflow-hidden">
+                        <div class="flex space-x-8 scrolling-text">
+                            <span class="flex items-center text-luxury-gold font-semibold whitespace-nowrap">
+                                <i class="fas fa-crown mr-2"></i>
+                                Best Price Guarantee
+                            </span>
+                            <span class="flex items-center text-luxury-gold font-semibold whitespace-nowrap">
+                                <i class="fas fa-concierge-bell mr-2"></i>
+                                24/7 Concierge Service
+                            </span>
+                            <span class="flex items-center text-luxury-gold font-semibold whitespace-nowrap">
+                                <i class="fas fa-ship mr-2"></i>
+                                All-Inclusive Luxury
+                            </span>
+                        </div>
+                    </div>
+
+                    <button class="bg-luxury-navy text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors">
+                        Read More About Us
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World's Most Luxurious Cruise Lines -->
+    <section id="cruise-lines-section" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-luxury-navy mb-6">
+                    World's Most Luxurious Cruise Lines
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience unmatched elegance with our carefully selected portfolio of premium cruise lines
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Regent Seven Seas -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/ff69a9ec29-7ecae3cfe8dcf9954a3b.png" alt="regent seven seas cruise ship luxury elegant exterior ocean" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-2xl font-bold mb-2">Regent Seven Seas</h3>
+                            <p class="text-sm opacity-90 mb-4">The pinnacle of all-inclusive luxury</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Fleet
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Silversea -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/564430a401-fd123d4580b7b979f8c4.png" alt="silversea cruise ship luxury elegant sophisticated design" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-2xl font-bold mb-2">Silversea</h3>
+                            <p class="text-sm opacity-90 mb-4">Ultra-luxury expedition cruising</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Fleet
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Crystal Cruises -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bf349f5e6e-2a60163cae0c9f852721.png" alt="crystal cruise ship luxury modern elegant design ocean" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-2xl font-bold mb-2">Crystal Cruises</h3>
+                            <p class="text-sm opacity-90 mb-4">Sophisticated luxury redefined</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Fleet
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Showcase -->
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="relative rounded-2xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-64 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fd6c3726c9-abc36f53cb514b67ee1c.png" alt="luxury cruise ship dining room elegant fine dining experience" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h4 class="font-semibold">Culinary Excellence</h4>
+                    </div>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-64 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/847ab5ee83-88e5840873f70cf681aa.png" alt="luxury cruise ship spa wellness center elegant relaxation" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h4 class="font-semibold">Wellness & Spa</h4>
+                    </div>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-64 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/cd35c862fc-a6a8c4cbd745b7abc52e.png" alt="luxury cruise ship suite balcony ocean view elegant interior" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <h4 class="font-semibold">Luxury Suites</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Concierge Section -->
+    <section id="concierge-section" class="py-20 luxury-gradient">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-white mb-6">
+                    Our Expert Concierge Service
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Dedicated specialists ensuring every moment of your journey exceeds expectations
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="text-center group">
+                    <div class="relative mb-6 mx-auto w-32 h-32">
+                        <img class="w-full h-full object-cover rounded-full border-4 border-luxury-gold group-hover:scale-110 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/83dfdf5a90-d3bb15e27f98e2b8cc0a.png" alt="professional concierge specialist elegant uniform luxury service" />
+                        <div class="absolute -bottom-2 -right-2 bg-luxury-gold rounded-full p-2">
+                            <i class="fas fa-concierge-bell text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-luxury text-xl font-bold text-white mb-2">Personal Concierge</h3>
+                    <p class="text-gray-300 text-sm">24/7 dedicated assistance for all your needs</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative mb-6 mx-auto w-32 h-32">
+                        <img class="w-full h-full object-cover rounded-full border-4 border-luxury-gold group-hover:scale-110 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/63012b5c9b-6b12ec62a13d8b3d1851.png" alt="travel expert specialist professional elegant luxury service" />
+                        <div class="absolute -bottom-2 -right-2 bg-luxury-gold rounded-full p-2">
+                            <i class="fas fa-map-marked-alt text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-luxury text-xl font-bold text-white mb-2">Travel Experts</h3>
+                    <p class="text-gray-300 text-sm">Curated experiences and insider knowledge</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative mb-6 mx-auto w-32 h-32">
+                        <img class="w-full h-full object-cover rounded-full border-4 border-luxury-gold group-hover:scale-110 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/aef0c5c032-6cf52453aa170300573a.png" alt="luxury dining specialist sommelier elegant professional service" />
+                        <div class="absolute -bottom-2 -right-2 bg-luxury-gold rounded-full p-2">
+                            <i class="fas fa-wine-glass-alt text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-luxury text-xl font-bold text-white mb-2">Dining Curators</h3>
+                    <p class="text-gray-300 text-sm">Exclusive reservations and culinary experiences</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="relative mb-6 mx-auto w-32 h-32">
+                        <img class="w-full h-full object-cover rounded-full border-4 border-luxury-gold group-hover:scale-110 transition-transform" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/96e54f134c-e4b8f9e1e36e72eb3d3c.png" alt="luxury wellness specialist spa professional elegant service" />
+                        <div class="absolute -bottom-2 -right-2 bg-luxury-gold rounded-full p-2">
+                            <i class="fas fa-spa text-white text-sm"></i>
+                        </div>
+                    </div>
+                    <h3 class="font-luxury text-xl font-bold text-white mb-2">Wellness Advisors</h3>
+                    <p class="text-gray-300 text-sm">Personalized spa and fitness programs</p>
+                </div>
+            </div>
+
+            <!-- Video Testimonials -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="relative rounded-2xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/79251a62a7-3992c9325047b19a59be.png" alt="luxury concierge service professional elegant interaction guest" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-6 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h4 class="font-luxury text-xl font-bold mb-2">Meet Your Concierge Team</h4>
+                        <p class="text-sm opacity-90">Discover how our experts craft your perfect journey</p>
+                    </div>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4315fe05f7-0fee2ffa16c2e9a83408.png" alt="luxury cruise guest testimonial happy couple elegant experience" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-6 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h4 class="font-luxury text-xl font-bold mb-2">Guest Experiences</h4>
+                        <p class="text-sm opacity-90">Real stories from our valued guests</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Limited Time Offers Section -->
+    <section id="offers-section" class="py-20 bg-luxury-cream">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-luxury-navy mb-6">
+                    Limited Time Offers
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Exclusive deals and unprecedented savings on luxury cruise experiences
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover-scale">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                                LIMITED TIME
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold text-luxury-navy">£5,876</div>
+                                <div class="text-sm text-gray-500 line-through">£9,944</div>
+                                <div class="text-sm text-green-600 font-semibold">Save 41%</div>
+                            </div>
+                        </div>
+                        <h3 class="font-luxury text-2xl font-bold text-luxury-navy mb-4">
+                            Seven Seas Voyager - Mediterranean
+                        </h3>
+                        <div class="space-y-3 text-gray-600">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt w-5 text-luxury-gold mr-3"></i>
+                                <span>28 June 2026 - 12 nights</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt w-5 text-luxury-gold mr-3"></i>
+                                <span>Istanbul to Civitavecchia</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bed w-5 text-luxury-gold mr-3"></i>
+                                <span>Deluxe Veranda Suite</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-luxury-gold text-white py-3 rounded-full font-semibold mt-6 hover:bg-yellow-600 transition-colors">
+                            Book This Deal
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover-scale">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                                FREE UPGRADE
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold text-luxury-navy">£7,200</div>
+                                <div class="text-sm text-gray-500 line-through">£10,500</div>
+                                <div class="text-sm text-green-600 font-semibold">Save 31%</div>
+                            </div>
+                        </div>
+                        <h3 class="font-luxury text-2xl font-bold text-luxury-navy mb-4">
+                            Seven Seas Explorer - Caribbean
+                        </h3>
+                        <div class="space-y-3 text-gray-600">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt w-5 text-luxury-gold mr-3"></i>
+                                <span>15 August 2026 - 10 nights</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt w-5 text-luxury-gold mr-3"></i>
+                                <span>Miami to Barbados</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-crown w-5 text-luxury-gold mr-3"></i>
+                                <span>Master Suite (Upgraded)</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-luxury-gold text-white py-3 rounded-full font-semibold mt-6 hover:bg-yellow-600 transition-colors">
+                            Book This Deal
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img class="w-full h-96 object-cover rounded-2xl shadow-xl" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b2ccc81d97-f9d4f17ed239ab7c102d.png" alt="luxury cruise ship sunset ocean waves exclusive offer elegant" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center rounded-2xl">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-6 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-3xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute top-6 left-6 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                        ENDS SOON
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Offers Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/90cee0c920-141ee60697bdba9a51c5.png" alt="luxury cruise ship balcony suite elegant ocean view" />
+                    <div class="p-6">
+                        <div class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold mb-3 inline-block">
+                            ALL-INCLUSIVE
+                        </div>
+                        <h4 class="font-luxury text-lg font-bold mb-2">Silversea Wind - Northern Europe</h4>
+                        <p class="text-gray-600 text-sm mb-4">7 nights from Copenhagen</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-luxury-navy">£4,299</span>
+                            <button class="bg-luxury-gold text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                View Deal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/847ab5ee83-7b7d0ca1ad02e772bd4a.png" alt="luxury cruise ship spa wellness center elegant relaxation" />
+                    <div class="p-6">
+                        <div class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold mb-3 inline-block">
+                            SPA CREDIT
+                        </div>
+                        <h4 class="font-luxury text-lg font-bold mb-2">Crystal Symphony - Alaska</h4>
+                        <p class="text-gray-600 text-sm mb-4">12 nights from Seattle</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-luxury-navy">£8,950</span>
+                            <button class="bg-luxury-gold text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                View Deal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9f7aa2c485-8012e6564d99a696aaee.png" alt="luxury cruise ship dining restaurant elegant fine dining" />
+                    <div class="p-6">
+                        <div class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold mb-3 inline-block">
+                            EARLY BIRD
+                        </div>
+                        <h4 class="font-luxury text-lg font-bold mb-2">Seabourn Ovation - Asia</h4>
+                        <p class="text-gray-600 text-sm mb-4">14 nights from Singapore</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-luxury-navy">£12,400</span>
+                            <button class="bg-luxury-gold text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                View Deal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Magnificent Ships Section -->
+    <section id="ships-section" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-luxury-navy mb-6">
+                    Magnificent Ships
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our fleet of extraordinary vessels, each a masterpiece of maritime luxury
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f7a27e29f3-c9912d1384528a760738.png" alt="seven seas grandeur luxury cruise ship elegant exterior ocean" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Seven Seas Grandeur</h3>
+                            <p class="text-sm opacity-90 mb-3">The pinnacle of luxury cruising</p>
+                            <div class="flex items-center space-x-4 text-xs">
+                                <span><i class="fas fa-users mr-1"></i>750 guests</span>
+                                <span><i class="fas fa-ship mr-1"></i>2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/13380b018e-fdfd2874651c4f93b8f6.png" alt="seven seas explorer luxury cruise ship elegant modern design" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Seven Seas Explorer</h3>
+                            <p class="text-sm opacity-90 mb-3">The most luxurious ship ever built</p>
+                            <div class="flex items-center space-x-4 text-xs">
+                                <span><i class="fas fa-users mr-1"></i>732 guests</span>
+                                <span><i class="fas fa-ship mr-1"></i>2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1d270095a4-8d564d4eb5b352b1904d.png" alt="seven seas splendor luxury cruise ship elegant sophisticated" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Seven Seas Splendor</h3>
+                            <p class="text-sm opacity-90 mb-3">Perfection perfected</p>
+                            <div class="flex items-center space-x-4 text-xs">
+                                <span><i class="fas fa-users mr-1"></i>750 guests</span>
+                                <span><i class="fas fa-ship mr-1"></i>2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3e428f18a1-53a13acffff15aae0fde.png" alt="silversea silver muse luxury cruise ship elegant design" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Silver Muse</h3>
+                            <p class="text-sm opacity-90 mb-3">Ultra-luxury redefined</p>
+                            <div class="flex items-center space-x-4 text-xs">
+                                <span><i class="fas fa-users mr-1"></i>596 guests</span>
+                                <span><i class="fas fa-ship mr-1"></i>2017</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/07c22fdf71-d995e521d7bd4f0016bb.png" alt="crystal serenity luxury cruise ship elegant sophisticated design" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Crystal Serenity</h3>
+                            <p class="text-sm opacity-90 mb-3">Sophisticated elegance</p>
+                            <div class="flex items-center space-x-4 text-xs">
+                                <span><i class="fas fa-users mr-1"></i>980 guests</span>
+                                <span><i class="fas fa-ship mr-1"></i>2003</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3971e0ac45-2799374a276073deb957.png" alt="seabourn ovation luxury cruise ship elegant modern ultra luxury" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Seabourn Ovation</h3>
+                            <p class="text-sm opacity-90 mb-3">Intimate luxury experience</p>
+                            <div class="flex items-center space-x-4 text-xs">
+                                <span><i class="fas fa-users mr-1"></i>600 guests</span>
+                                <span><i class="fas fa-ship mr-1"></i>2018</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ship Features Video -->
+            <div class="relative rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
+                <img class="w-full h-96 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8e2a91062f-1852012c601cb21268f8.png" alt="luxury cruise ship interior grand atrium elegant sophisticated design" />
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-8 hover:bg-white/30 transition-colors mb-4">
+                            <i class="fas fa-play text-white text-4xl"></i>
+                        </button>
+                        <h3 class="font-luxury text-2xl font-bold mb-2">Virtual Ship Tours</h3>
+                        <p class="text-lg opacity-90">Experience luxury before you sail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Section -->
+    <section id="destinations-section" class="py-20 luxury-gradient">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-white mb-6">
+                    Extraordinary Destinations
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Explore the world's most captivating destinations aboard our luxury fleet
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e5ee4c4d8d-72727a9ee3bc1a940195.png" alt="mediterranean cruise destination santorini greece elegant sunset" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Mediterranean</h3>
+                            <p class="text-sm opacity-90 mb-3">Ancient wonders & azure seas</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Cruises
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a1b3e44bb1-6ac2649b62e574fc6761.png" alt="caribbean cruise destination turquoise waters tropical paradise" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Caribbean</h3>
+                            <p class="text-sm opacity-90 mb-3">Tropical paradise awaits</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Cruises
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/155e4dcf33-0adc3a8f4f9271f97319.png" alt="alaska cruise destination glaciers mountains scenic wilderness" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Alaska</h3>
+                            <p class="text-sm opacity-90 mb-3">Untamed wilderness beauty</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Cruises
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6a48b8824b-8627c025304a30f387d5.png" alt="northern europe cruise destination fjords norway scenic beauty" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Northern Europe</h3>
+                            <p class="text-sm opacity-90 mb-3">Majestic fjords & capitals</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Cruises
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d609ba2f96-b335eb4a9c5525d6db39.png" alt="asia cruise destination japan temple cherry blossoms cultural" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">Asia</h3>
+                            <p class="text-sm opacity-90 mb-3">Cultural immersion & exotic ports</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Cruises
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/760c339c42-bd97f633fe00fbabd725.png" alt="south america cruise destination patagonia antarctica scenic adventure" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-luxury text-xl font-bold mb-1">South America</h3>
+                            <p class="text-sm opacity-90 mb-3">Adventure & natural wonders</p>
+                            <button class="bg-luxury-gold px-4 py-2 rounded-full text-sm font-semibold hover:bg-yellow-600 transition-colors">
+                                Explore Cruises
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destination Videos -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div class="relative rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/07137e6aeb-69d309764c1bc0824090.png" alt="luxury cruise excursion cultural tour elegant guided experience" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-3 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-3 left-3 text-white">
+                        <h4 class="font-semibold text-sm">Cultural Tours</h4>
+                    </div>
+                </div>
+
+                <div class="relative rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d1906e240d-4c3fddcfce87f7caba63.png" alt="luxury cruise adventure excursion scenic helicopter tour" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-3 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-3 left-3 text-white">
+                        <h4 class="font-semibold text-sm">Adventure Tours</h4>
+                    </div>
+                </div>
+
+                <div class="relative rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9622e76969-97f14a671d15fffdbfa1.png" alt="luxury cruise culinary experience local food wine tasting elegant" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-3 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-3 left-3 text-white">
+                        <h4 class="font-semibold text-sm">Culinary Tours</h4>
+                    </div>
+                </div>
+
+                <div class="relative rounded-xl overflow-hidden shadow-lg hover-scale">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/02dd8c84a7-6491a4cb0b9ab2a31259.png" alt="luxury cruise wellness excursion spa retreat elegant relaxation" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-3 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-lg"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-3 left-3 text-white">
+                        <h4 class="font-semibold text-sm">Wellness Tours</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Award Winning Section -->
+    <section id="awards-section" class="py-20 bg-luxury-cream">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-luxury-navy mb-6">
+                    Award-Winning Excellence
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Recognized globally for our commitment to luxury and exceptional service
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl p-8 shadow-xl overflow-hidden">
+                <div class="flex space-x-12 scrolling-text items-center">
+                    <div class="flex items-center space-x-4 whitespace-nowrap">
+                        <img class="h-16 w-auto object-contain" src="https://www.sixstarcruises.co.uk/storage/media/1916505/conversions/AAA's-2023-winner-full-large_thumb-(1)-large_thumb.jpg" alt="world travel awards logo elegant luxury recognition" />
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">Travel Weekly Large Cruise Agency of the Year 2023.</h4>
+                            <!-- <p class="text-sm text-gray-600">World Travel Awards 2023</p> -->
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 whitespace-nowrap">
+                        <img class="h-16 w-auto object-contain" src="https://www.sixstarcruises.co.uk/storage/media/1916506/conversions/Best-Luxury-Travel-Agent-large_thumb.jpg" alt="conde nast traveler awards logo elegant luxury" />
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">Best Luxury Travel Agent 2022.</h4>
+                            <!-- <p class="text-sm text-gray-600">Condé Nast Traveler 2023</p> -->
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 whitespace-nowrap">
+                        <img class="h-16 w-auto object-contain" src="https://www.sixstarcruises.co.uk/storage/media/1938721/conversions/image-large_thumb.jpg" />
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">UK Cruise Awards Winners 2023.</h4>
+                            <!-- <p class="text-sm text-gray-600">Travel Weekly Awards 2023</p> -->
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4 whitespace-nowrap">
+                        <img class="h-16 w-auto object-contain" src="https://www.sixstarcruises.co.uk/storage/media/1916509/conversions/use-of-content-large_thumb-large_thumb.jpg" alt="luxury lifestyle awards logo elegant premium service" />
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">Best Specialist Cruise Agent 2023</h4>
+                            <!-- <p class="text-sm text-gray-600">Luxury Lifestyle Awards 2023</p> -->
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 whitespace-nowrap">
+                        <img class="h-16 w-auto object-contain" src="https://www.sixstarcruises.co.uk/storage/media/1916509/conversions/use-of-content-large_thumb-large_thumb.jpg" alt="luxury lifestyle awards logo elegant premium service" />
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">Best Use Of Content 2023</h4>
+                            <!-- <p class="text-sm text-gray-600">Luxury Lifestyle Awards 2023</p> -->
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4 whitespace-nowrap">
+                        <img class="h-16 w-auto object-contain" src="https://www.sixstarcruises.co.uk/storage/media/1916510/conversions/Lux-Awards-winner-logos-blk_LUXURY-CRUISE-AGENCY-large_thumb.jpg" alt="luxury lifestyle awards logo elegant premium service" />
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">TTG Luxury Cruise Agency Of The Year.</h4>
+                            <!-- <p class="text-sm text-gray-600">Luxury Lifestyle Awards 2023</p> -->
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4 whitespace-nowrap">
+                        <img class="h-16 w-auto object-contain" src="https://www.sixstarcruises.co.uk/storage/media/1938722/conversions/image-(1)-large_thumb.jpg" alt="luxury lifestyle awards logo elegant premium service" />
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">Best Workplaces in Travel 2024.</h4>
+                            <!-- <p class="text-sm text-gray-600">Luxury Lifestyle Awards 2023</p> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Recognition Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-16">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-luxury-navy mb-2">25+</div>
+                    <div class="text-gray-600">Industry Awards</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-luxury-navy mb-2">98%</div>
+                    <div class="text-gray-600">Customer Satisfaction</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-luxury-navy mb-2">20+</div>
+                    <div class="text-gray-600">Years of Excellence</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-luxury-navy mb-2">5★</div>
+                    <div class="text-gray-600">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section id="testimonials-section" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-luxury-navy mb-6">
+                    What Our Clients Say
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hear from our valued guests about their extraordinary experiences
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-luxury-cream rounded-2xl p-8 shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <img src="https://leanlivingjourney.com/wp-content/uploads/2025/10/images-7.jpeg" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">Sarah Mitchell</h4>
+                            <p class="text-gray-600 text-sm">Seven Seas Explorer Guest</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-luxury-gold mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Absolutely extraordinary experience. The attention to detail and personalized service exceeded all expectations. Every moment was pure luxury."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-cream rounded-2xl p-8 shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <img src="https://leanlivingjourney.com/wp-content/uploads/2025/10/images.jpeg" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">James Thompson</h4>
+                            <p class="text-gray-600 text-sm">Regent Seven Seas Guest</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-luxury-gold mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "The Mediterranean cruise was perfection. From the exquisite dining to the spacious suites, every detail was flawless."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-luxury-cream rounded-2xl p-8 shadow-lg hover-scale">
+                    <div class="flex items-center mb-6">
+                        <img src="https://leanlivingjourney.com/wp-content/uploads/2025/10/images-6.jpeg" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-luxury-navy">Emily Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">Silversea Guest</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-luxury-gold mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "The Alaska expedition was breathtaking. The wildlife, glaciers, and onboard luxury created memories to last a lifetime."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Testimonials -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
+                <div class="relative rounded-2xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8dc2fefa2e-575e0515555faf4a6d67.png" alt="happy luxury cruise guests testimonial couple elegant experience" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-6 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h4 class="font-luxury text-xl font-bold mb-2">The Williams Family</h4>
+                        <p class="text-sm opacity-90">Mediterranean Adventure Story</p>
+                    </div>
+                </div>
+
+                <div class="relative rounded-2xl overflow-hidden shadow-xl hover-scale">
+                    <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4315fe05f7-ebd86231c0ae0473a37b.png" alt="luxury cruise guest testimonial elegant couple dining experience" />
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+                        <button class="bg-white/20 backdrop-blur-sm rounded-full p-6 hover:bg-white/30 transition-colors">
+                            <i class="fas fa-play text-white text-2xl"></i>
+                        </button>
+                    </div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h4 class="font-luxury text-xl font-bold mb-2">Robert & Margaret</h4>
+                        <p class="text-sm opacity-90">Caribbean Luxury Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section id="pricing-section" class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dc8e164cc5-203a352e1f2e53600e96.png" alt="luxury cruise ship ocean sunset elegant scenic background" />
+            <div class="absolute inset-0 bg-luxury-navy/80"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-luxury text-5xl font-bold text-white mb-6">
+                    Exclusive Packages
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Choose from our carefully curated luxury packages designed for the ultimate experience
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Premium Package -->
+                <div class="glass-effect rounded-2xl p-8 border border-white/20 hover-scale">
+                    <div class="text-center mb-8">
+                        <h3 class="font-luxury text-2xl font-bold text-white mb-2">Premium</h3>
+                        <p class="text-gray-300 text-sm mb-6">Perfect for couples seeking luxury</p>
+                        <div class="text-4xl font-bold text-luxury-gold mb-2">£4,999</div>
+                        <div class="text-gray-300 text-sm">per person</div>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-white">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Deluxe Veranda Suite</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>All-Inclusive Dining</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Premium Beverages</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Shore Excursions</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>WiFi & Gratuities</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-luxury-gold text-white py-3 rounded-full font-semibold hover:bg-yellow-600 transition-colors">
+                        Select Package
+                    </button>
+                </div>
+
+                <!-- Signature Package -->
+                <div class="glass-effect rounded-2xl p-8 border-2 border-luxury-gold hover-scale relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-luxury-gold text-white px-6 py-2 rounded-full text-sm font-bold">
+                        MOST POPULAR
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="font-luxury text-2xl font-bold text-white mb-2">Signature</h3>
+                        <p class="text-gray-300 text-sm mb-6">Enhanced luxury with exclusive perks</p>
+                        <div class="text-4xl font-bold text-luxury-gold mb-2">£7,999</div>
+                        <div class="text-gray-300 text-sm">per person</div>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-white">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Concierge Suite</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Specialty Dining</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Premium Spa Credit</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Private Excursions</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Personal Concierge</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-luxury-gold text-white py-3 rounded-full font-semibold hover:bg-yellow-600 transition-colors">
+                        Select Package
+                    </button>
+                </div>
+
+                <!-- Ultimate Package -->
+                <div class="glass-effect rounded-2xl p-8 border border-white/20 hover-scale">
+                    <div class="text-center mb-8">
+                        <h3 class="font-luxury text-2xl font-bold text-white mb-2">Ultimate</h3>
+                        <p class="text-gray-300 text-sm mb-6">The pinnacle of luxury cruising</p>
+                        <div class="text-4xl font-bold text-luxury-gold mb-2">£15,999</div>
+                        <div class="text-gray-300 text-sm">per person</div>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-white">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Master Suite</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Private Butler Service</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Unlimited Spa Access</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>Helicopter Transfers</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-luxury-gold mr-3"></i>
+                            <span>VIP Everything</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-luxury-gold text-white py-3 rounded-full font-semibold hover:bg-yellow-600 transition-colors">
+                        Select Package
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter & Contact -->
+<section id="newsletter" class="py-20 luxury-gradient">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="playfair text-4xl lg:text-5xl font-bold text-white mb-6">
+                    Stay Updated with Exclusive Offers
+                </h2>
+                <p class="text-xl text-white/80 mb-8">
+                    Be the first to know about new itineraries, special promotions, and exclusive luxury cruise deals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-6 py-4 rounded-full text-luxury-navy focus:outline-none focus:ring-2 focus:ring-luxury-gold">
+                    <button class="bg-luxury-gold text-luxury-navy px-8 py-4 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="text-white/60 text-sm mt-4">
+                    We respect your privacy. Unsubscribe at any time.
+                </p>
+            </div>
+
+            <div class="bg-white/10 rounded-2xl p-8 backdrop-blur-sm">
+                <h3 class="playfair text-2xl font-bold text-white mb-6">Contact Our Cruise Experts</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center text-white">
+                        <i class="fa-solid fa-phone w-6 text-luxury-gold mr-4"></i>
+                        <div>
+                            <div class="font-semibold">+44 (0) 20 7123 4567</div>
+                            <div class="text-sm text-white/80">Available 24/7</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-white">
+                        <i class="fa-solid fa-envelope w-6 text-luxury-gold mr-4"></i>
+                        <div>
+                            <div class="font-semibold">luxury@sixstarcruises.com</div>
+                            <div class="text-sm text-white/80">Expert advice & support</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-white">
+                        <i class="fa-solid fa-map-marker-alt w-6 text-luxury-gold mr-4"></i>
+                        <div>
+                            <div class="font-semibold">London, United Kingdom</div>
+                            <div class="text-sm text-white/80">Visit our luxury showroom</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="w-full bg-luxury-gold text-luxury-navy py-3 rounded-full font-semibold mt-6 hover:bg-yellow-400 transition-colors">
+                    Schedule Consultation
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-luxury-navy text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-6">
+                    <img class="h-12 w-auto" src="https://www.sixstarcruises.co.uk/img/logo/ssc-logo.png" alt="luxury cruise logo SixStarCruises elegant white and gold design" />
+                    <p class="text-gray-700 leading-relaxed">
+                        Creating extraordinary maritime experiences for discerning travelers worldwide. 
+                        Your journey to luxury begins here.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 p-3 rounded-full hover:bg-luxury-gold transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 p-3 rounded-full hover:bg-luxury-gold transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 p-3 rounded-full hover:bg-luxury-gold transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 p-3 rounded-full hover:bg-luxury-gold transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-luxury text-xl font-bold mb-6">Cruise Lines</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Regent Seven Seas</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Silversea Cruises</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Crystal Cruises</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Seabourn</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Ponant</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-luxury text-xl font-bold mb-6">Destinations</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Mediterranean</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Caribbean</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Alaska</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Northern Europe</a></li>
+                        <li><a href="#" class="hover:text-luxury-gold transition-colors">Asia</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-luxury text-xl font-bold mb-6">Contact</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-luxury-gold"></i>
+                            +44 20 7123 4567
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-luxury-gold"></i>
+                            luxury@sixstarcruises.co.uk
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 text-luxury-gold mt-1"></i>
+                            123 Luxury Lane<br>London, UK SW1A 1AA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Awards & Certifications -->
+            <!-- <div id="awards-certifications" class="border-t border-white/20 pt-8 mb-8">
+                <h4 class="font-luxury text-xl font-bold mb-6 text-center">Awards & Certifications</h4>
+                <div class="flex justify-center items-center space-x-8 opacity-70">
+                    <img class="h-12 w-auto object-contain" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8456ad621b-6a1d3718b5a195865d5b.png" alt="ABTA logo certification travel luxury" />
+                    <img class="h-12 w-auto object-contain" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/acb8184d9f-17c0c25922f12cf5d27f.png" alt="ATOL logo certification travel luxury" />
+                    <img class="h-12 w-auto object-contain" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f91f78fad6-db690863f054347beeb3.png" alt="IATA logo certification travel luxury" />
+                    <img class="h-12 w-auto object-contain" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/227b26bd20-513a0cfe060ed0882ee4.png" alt="CLIA logo certification cruise luxury" />
+                </div>
+            </div> -->
+
+
+            <div class="border-t border-white/20 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2025 SixStarCruises.co.uk. All rights reserved. | Privacy Policy | Terms & Conditions | Cookie Policy</p>
+            </div>
+
+            <div class="flex items-center space-x-6 text-sm">
+                <span class="text-white/60">Secure payments by</span>
+                <div class="flex space-x-2">
+                    <i class="fa-brands fa-cc-visa text-2xl text-white/60"></i>
+                    <i class="fa-brands fa-cc-mastercard text-2xl text-white/60"></i>
+                    <i class="fa-brands fa-cc-amex text-2xl text-white/60"></i>
+                    <i class="fa-brands fa-cc-paypal text-2xl text-white/60"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
